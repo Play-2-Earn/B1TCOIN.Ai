@@ -16,7 +16,8 @@ const App = () => {
   const inputRef = useRef(null);
   const location = useLocation();
   const [index, setIndex] = useState(0);
-  const promptText = "WHERE ARE YOU HEADED TO?";
+  const promptText =
+    "Where in the World would you like to have a B1TCOIN Ai Node?";
 
   useEffect(() => {
     const handleResize = () => {
