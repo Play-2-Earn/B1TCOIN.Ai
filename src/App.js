@@ -17,7 +17,7 @@ const App = () => {
   const location = useLocation();
   const [index, setIndex] = useState(0);
   const promptText =
-    "Where in the World would you like to have a B1TCOIN Ai Node?";
+    "Where in the World would you like to Deploy Your B1TCOIN AI NODE";
 
   useEffect(() => {
     const handleResize = () => {
@@ -124,7 +124,15 @@ const App = () => {
               )}{" "}
               {/* Added title */}
               {inputActive && !hasSearched && (
-                <h1 className={styles.prompt}>{typedText}</h1>
+                <h1
+                  className={styles.prompt}
+                  style={{
+                    fontSize: isMobile ? "20px" : "34px", // Adjust font size for mobile
+                    lineHeight: isMobile ? "1.5" : "1.2", // Optional: Adjust line height for better readability
+                  }}
+                >
+                  {typedText}
+                </h1>
               )}
               <div
                 className={`${styles.inputContainer} ${
