@@ -1,6 +1,6 @@
 // components/Header.js
 import React, { useState } from "react";
-import logo from "../assets/logo1.png";
+import logo from "../assets/B1T.jpg";
 import styles from "./Header.module.css"; // Import the CSS Module
 
 const Header = ({ isLandingPage, isMobile }) => {
